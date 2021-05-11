@@ -1,0 +1,72 @@
+- job: blackscholes
+  node: 2c
+  cores: []
+  follows: []
+  resources:
+    requests:
+      cpu: null
+      memory: null
+    limits:
+      cpu: null
+      memory: null
+  num-threads: 1
+- job: canneal
+  node: 2c
+  cores: []
+  follows: []
+  resources:
+    requests:
+      cpu: null
+      memory: null
+    limits:
+      cpu: null
+      memory: null
+  num-threads: 1
+- job: dedup
+  node: 2c
+  cores: []
+  follows: []
+  resources:
+    requests:
+      cpu: null
+      memory: null
+    limits:
+      cpu: null
+      memory: null
+  num-threads: 1
+- job: ferret
+  node: 2c
+  cores: []
+  follows: []
+  resources:
+    requests:
+      cpu: null
+      memory: null
+    limits:
+      cpu: null
+      memory: null
+  num-threads: 1
+- job: fft
+  node: 2c
+  cores: []
+  follows: []
+  resources:
+    requests:
+      cpu: null
+      memory: null
+    limits:
+      cpu: null
+      memory: null
+  num-threads: 1
+- job: freqmine
+  node: 2c
+  cores: []
+  follows: []
+  resources:
+    requests:
+      cpu: null
+      memory: null
+    limits:
+      cpu: null
+      memory: null
+  num-threads: 1
