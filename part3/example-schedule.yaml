@@ -1,7 +1,7 @@
 - job: blackscholes
   node: 2c
   cores: []
-  follows: []
+  follows: [canneal]
   resources:
     requests:
       cpu: null
@@ -9,11 +9,11 @@
     limits:
       cpu: null
       memory: null
-  num-threads: 1
+  num-threads: 4
 - job: canneal
   node: 2c
   cores: []
-  follows: []
+  follows: [dedup]
   resources:
     requests:
       cpu: null
@@ -35,9 +35,9 @@
       memory: null
   num-threads: 1
 - job: ferret
-  node: 2c
-  cores: []
-  follows: []
+  node: 8c
+  cores: [0, 1]
+  follows: [fft]
   resources:
     requests:
       cpu: null
@@ -47,8 +47,8 @@
       memory: null
   num-threads: 1
 - job: fft
-  node: 2c
-  cores: []
+  node: 8c
+  cores: [0]
   follows: []
   resources:
     requests:
@@ -59,8 +59,8 @@
       memory: null
   num-threads: 1
 - job: freqmine
-  node: 2c
-  cores: []
+  node: 8c
+  cores: [2, 3]
   follows: []
   resources:
     requests:
