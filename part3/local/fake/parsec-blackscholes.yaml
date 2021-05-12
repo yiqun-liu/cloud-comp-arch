@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: parsec-blackscholes
+  labels:
+    name: parsec-blackscholes
+spec:
+  template:
+    spec:
+      containers:
+      - name: command-demo-container
+        image: debian
+        command: ["/bin/sh"]
+        args: ["-c", "echo parsec-blackscholes is running; sleep 5; printenv | head -n 1"]
+      restartPolicy: Never
+

@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: parsec-canneal
+  labels:
+    name: parsec-canneal
+spec:
+  template:
+    spec:
+      containers:
+      - name: command-demo-container
+        image: debian
+        command: ["/bin/sh"]
+        args: ["-c", "echo parsec-canneal is running; sleep 5; printenv | head -n 1"]
+      restartPolicy: Never
+

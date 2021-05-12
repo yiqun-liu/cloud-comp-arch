@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: parsec-freqmine
+  labels:
+    name: parsec-freqmine
+spec:
+  template:
+    spec:
+      containers:
+      - name: command-demo-container
+        image: debian
+        command: ["/bin/sh"]
+        args: ["-c", "echo parsec-freqmine is running; sleep 5; printenv | head -n 1"]
+      restartPolicy: Never
+

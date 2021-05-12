@@ -1,0 +1,16 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: parsec-fft
+  labels:
+    name: parsec-fft
+spec:
+  template:
+    spec:
+      containers:
+      - name: command-demo-container
+        image: debian
+        command: ["/bin/sh"]
+        args: ["-c", "echo parsec-fft is running; sleep 5; printenv | head -n 1"]
+      restartPolicy: Never
+
