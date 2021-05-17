@@ -57,7 +57,7 @@ def plot(timestamp, cpu_util, mem_util, title=None):
 def main():
     logs = load_logs(sys.argv[1], sys.argv[2])
     timestamp, cpu_util, mem_util = extract_data(logs)
-    plot(timestamp, cpu_util, mem_util)
+    plot(timestamp, cpu_util, mem_util, sys.argv[2])
 
 if __name__ == '__main__':
     main()
