@@ -105,4 +105,8 @@ python plot-resource.py $JSON_LOG_DIR $SCHEDULE_NAME
 
 visualize time slots
 
-TODO
+```shell
+python plot-time.py $K8S_JOBS_FILE_PATH
+# e.g. python plot-time.py ../logs/s1-local.txt
+```
+
