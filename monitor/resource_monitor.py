@@ -54,7 +54,10 @@ def main():
         # sampling
         pids = get_running_workloads()
         for pid in pids + memcached_pids:
-            name, sample = get_resource_utilization(int(pid))
+            try:
+                name, sample = get_resource_utilization(int(pid))
+            except psutil.NoSuchProcess:
+                continue
             if name in records:
                 records[name].append(sample)
             else:

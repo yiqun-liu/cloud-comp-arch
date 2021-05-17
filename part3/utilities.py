@@ -65,8 +65,9 @@ def remove_all_jobs():
     print(stream.read())
 
     # this line is added according to LIU's debugging experience
-    # leave some time for so that our script will not be affected by stale K8S caches
-    time.sleep(5)
+    # leave some time so that 1) our script will not be affected by stale K8S caches
+    # 2) resources taken by removed jobs will be completely released
+    time.sleep(30)
 
 def get_node_name(node_type):
     stream = os.popen("kubectl get nodes --selector=cca-project-nodetype=" + node_type +
