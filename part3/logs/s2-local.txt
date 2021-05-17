@@ -1,0 +1,7 @@
+NAME                  COMPLETIONS   DURATION   AGE
+parsec-blackscholes   1/1           102s       7m33s
+parsec-canneal        1/1           2m47s      6m57s
+parsec-dedup          1/1           34s        7m33s
+parsec-ferret         1/1           5m55s      7m33s
+parsec-fft            1/1           2m28s      7m33s
+parsec-freqmine       1/1           2m21s      5m51s
