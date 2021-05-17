@@ -96,4 +96,13 @@ scp -i ~/.ssh/cloud-computing ubuntu@external_ip:~/*.txt .
 
 ## Visualize Data
 
+visualize resource utilization
+
+```shell
+python plot-resource.py $JSON_LOG_DIR $SCHEDULE_NAME
+# e.g. python plot-resource.py ../logs s1
+```
+
+visualize time slots
+
 TODO
