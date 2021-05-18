@@ -50,7 +50,7 @@ def main():
     # stop monitoring when after we cannot sample useful information twice
     records = dict()
     memcached_pids = get_memcached_pids()
-    while not workload_started or num_empty < 2:
+    while not workload_started or num_empty < 6:
         # sampling
         pids = get_running_workloads()
         for pid in pids + memcached_pids:
