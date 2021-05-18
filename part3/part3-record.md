@@ -18,7 +18,7 @@ deploy memcached server
 kubectl create -f memcache-t1-cpuset.yaml
 kubectl expose pod some-memcached --name some-memcached-11211 \
     --type LoadBalancer --port 11211 --protocol TCP
-# remember memcached IP address (different from external IP of the node)
+# remember memcached service IP address (different from the external IP of the node)
 kubectl get service some-memcached-11211
 kubectl get pods -o wide
 ```
@@ -27,8 +27,7 @@ ssh into client & measurement machiens and compile memcached clients
 
 ```shell
 # machine: client A, client B, measurement machine
-sudo chmod +x ~/init-clients.sh
-sudo ~/init-clients.sh
+sudo bash ~/init-clients.sh
 ```
 
 ## Start Memcached Queries
@@ -54,7 +53,7 @@ date +%s
     --scan 30000:30500:10
 ```
 
-run queries and direct the output to a log file
+(when prepared) run queries and direct the output to a log file
 
 ```shell
 bash run-test.sh > s1-measure.txt
