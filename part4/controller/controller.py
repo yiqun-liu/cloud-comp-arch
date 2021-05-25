@@ -35,14 +35,8 @@ class Job:
     # update utilization info
     def sample_util(self):
         if self.pid is None:
-            stream = os.popen('pgrep ' + self.name)
-            results = stream.read().split()
-            if len(results) == 1:
-                self.pid = results[0]
-            elif len(results) > 1:
-                raise ValueError(self.name + ': more than one running process!')
-            else:
-                # the process is not yet started
+            success = self.__fetch_pid()
+            if not success:
                 return
 
         # process utilization information
@@ -57,7 +51,6 @@ class Job:
             if debug_counter == 10:
                 debug_counter = 0
                 debug_records[self.name].append(sample)
-
         except FileNotFoundError:
             # the process have terminated
             sample = None
@@ -69,6 +62,11 @@ class Job:
     # visible to scheduler (works only for memcached, shadowed for batch workloads)
     def adjust_cores(self, core_list=None):
         assert self.name == 'memcached'
+        if self.pid is None:
+            success = self.__fetch_pid()
+            if not success:
+                raise Exception('memcached not running when started.')
+
         logging.info('Adjusting cores allocated to {}: from {} to {}.'.format(
             self.name, self.core_list, core_list)
         )
@@ -78,6 +76,19 @@ class Job:
         core_str = ','.join([str(core) for core in core_list])
         command = 'taskset -a -cp {} {}'.format(core_str, self.pid)
         subprocess.Popen(['/bin/bash', '-c', command])
+
+    def __fetch_pid(self):
+        stream = os.popen('pgrep ' + self.name)
+        results = stream.read().split()
+        if len(results) == 1:
+            self.pid = results[0]
+            return True
+        elif len(results) > 1:
+            raise ValueError(self.name + ': more than one running process!')
+        else:
+            # the process is not yet started
+            return False
+
 
 # batch workload
 class Workload(Job):
@@ -106,6 +117,7 @@ class Workload(Job):
     def start(self, num_threads=1, core_list=None):
         self.num_threads = num_threads
         self.core_list = core_list
+        self.state = Workload.RUNNING
 
         image = configs[self.name]['image']
         command = configs[self.name]['command'].copy()
@@ -146,11 +158,12 @@ class Workload(Job):
 
     # should only be called by controller
     def update(self, running_containers):
-        if self.state == Workload.RUNNING or self.state == Workload.PAUSED:
-            self.sample_util()
+        if self.state == Workload.PENDING or self.state == Workload.FINISHED:
+            return
+
+        self.sample_util()
 
         # the first condition is a safeguard (in case Docker returns stale data)
-        # TODO will paused workload be considered as running_containers?
         if self.pid is not None and self.__container_id not in running_containers:
             self.state = Workload.FINISHED
             logging.info('batch workload {} finished.'.format(self.name))
@@ -170,8 +183,8 @@ class Controller:
             log_name = time.strftime('%m%d-%H%M')
         self.__log_name = log_name
         logging.basicConfig(
-            level=logging.DEBUG,
-            format="%(asctime)s [%(levelname)s] %(message)s",
+            level=logging.INFO,
+            format="%(created)s [%(levelname)s] %(message)s",
             handlers=[
                 logging.FileHandler(log_name + '.log'),
                 logging.StreamHandler(sys.stdout)
@@ -200,11 +213,14 @@ class Controller:
             self.__sample_util()
             running_containers = Controller.__get_running_containers()
 
+            # update memcached state
+            self.memcached.sample_util()
+
             # update workloads state
             num_pending = 0
             for workload in self.workloads.values():
-                if workload.state == Workload.RUNNING or workload.state == Workload.PAUSED:
-                    workload.update(running_containers)
+                workload.update(running_containers)
+                if workload.state != Workload.FINISHED:
                     num_pending += 1
 
             # all done
@@ -261,7 +277,7 @@ def calc_cpu_util(samples):
 
 debug_counter = 0
 debug_records = {
-    'sys':list(),
+    'sys': list(),
     'memcached': list(),
     'fft': list(),
     'freqmine': list(),
