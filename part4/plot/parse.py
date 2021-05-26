@@ -1,7 +1,7 @@
 import json
 
 # functions used to parse raw data
-def load_measurement_logs(file_path, repeat=False):
+def load_measurement_logs(file_path, repeat=False, include_target=False):
     with open(file_path, 'r') as f:
         lines = f.readlines()
 
@@ -15,9 +15,20 @@ def load_measurement_logs(file_path, repeat=False):
         values = line.split()
         # start time, end time, actual qps, P95 in ms
         logs[-1]['times'].append([int(values[-2]), int(values[-1])])
-        logs[-1]['metrics'].append([float(values[-4]), float(values[12]) / 1000.])
+        if not include_target:
+            logs[-1]['metrics'].append([float(values[-4]), float(values[12]) / 1000.])
+        else:
+            # actual qps, target qps, P95 in ms
+            logs[-1]['metrics'].append([float(values[-4]), float(values[-3]), float(values[12]) / 1000.])
 
-    return logs if repeat else logs[0]
+    if repeat:
+        return logs
+    else:
+        result = {'times': list(), 'metrics': list()}
+        for record in logs:
+            result['times'] += record['times']
+            result['metrics'] += record['metrics']
+        return result
 
 # align monitor samples with measurement logs and calculate utilization
 def calc_utilization(measure_logs, util_logs):
