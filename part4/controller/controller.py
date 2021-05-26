@@ -46,11 +46,6 @@ class Job:
             user_tick, sys_tick = int(stats[13]), int(stats[14])
             sample = ((user_tick + sys_tick) * KERNEL_TICK_SEC, time.time())
 
-            # for debugging
-            global debug_counter
-            if debug_counter == 10:
-                debug_counter = 0
-                debug_records[self.name].append(sample)
         except FileNotFoundError:
             # the process have terminated
             sample = None
@@ -58,6 +53,9 @@ class Job:
         self.__samples.pop()
         self.__samples.appendleft(sample)
         self.cpu_util = calc_cpu_util(self.__samples)
+
+        # for debugging
+        add_debug_records(self.name, self.cpu_util)
 
     # visible to scheduler (works only for memcached, shadowed for batch workloads)
     def adjust_cores(self, core_list=None):
@@ -171,12 +169,15 @@ class Workload(Job):
 # prepare utilization data, and periodically executes 'scheduler' function object
 # signature of scheduler: scheduler(memcached, workloads, sys_util)
 class Controller:
-    def __init__(self, scheduler, log_name=None, memcached_core_list=None):
+    def __init__(self, scheduler, log_name=None, memcached_core_list=None, single_task=False):
         self.scheduler = scheduler
         self.memcached = Job('memcached')
         self.workloads = dict()
         self.sys_cpu_util = (None, None, None, None)
         self.samples = deque([None] * 11)
+
+        # stop the controller immediately when first workload terminates, useful for experiment
+        self.single_task = single_task
 
         # initialize logger
         if log_name is None:
@@ -191,6 +192,9 @@ class Controller:
             ]
         )
         logging.info('Logs will be written to ' + log_name)
+
+        if self.single_task:
+            logging.info('Controller runs in single-task mode.')
 
         # set memcached
         if memcached_core_list is not None:
@@ -226,6 +230,8 @@ class Controller:
             # all done
             if num_pending == 0 and time.time() - start_time > 300:
                 break
+            if self.single_task and num_pending == 5:
+                break
 
             # call scheduler
             self.scheduler(self.memcached, self.workloads, self.sys_cpu_util)
@@ -250,10 +256,7 @@ class Controller:
         self.samples.appendleft((busy_time, total_time))
         self.sys_cpu_util = calc_cpu_util(self.samples)
 
-        global debug_counter
-        if debug_counter == 10:
-            debug_counter = 0
-            debug_records['sys'].append(self.sys_cpu_util)
+        add_debug_records('sys', self.sys_cpu_util)
 
     @staticmethod
     def __get_running_containers():
@@ -276,16 +279,21 @@ def calc_cpu_util(samples):
     return (u1, u3, u5, u10)
 
 debug_counter = 0
-debug_records = {
-    'sys': list(),
-    'memcached': list(),
-    'fft': list(),
-    'freqmine': list(),
-    'ferret': list(),
-    'canneal': list(),
-    'dedup': list(),
-    'blackscholes': list()
-}
+debug_interval = 10
+debug_records = dict()
+debug_records_timestamp = time.time()
+def add_debug_records(name, record):
+    # do some down-sampling to avoid being overwhelmed
+    global debug_counter, debug_records_timestamp
+    if debug_counter == debug_interval:
+        debug_counter = 0
+        debug_records_timestamp = time.time()
+    if debug_counter != 0:
+        return
+
+    if name not in debug_records:
+        debug_records[name] = list()
+    debug_records[name].append((record, debug_records_timestamp))
 
 configs = {
     "fft": {
