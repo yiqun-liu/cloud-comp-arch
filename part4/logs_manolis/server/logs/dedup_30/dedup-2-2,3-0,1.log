@@ -1,0 +1,13 @@
+1622068208.0403073 [INFO] Logs will be written to dedup-2-2,3-0,1
+1622068208.0404627 [INFO] Controller runs in single-task mode.
+1622068208.0513859 [INFO] Adjusting cores allocated to memcached: from None to [0, 1].
+1622068209.3766892 [INFO] Image fft pulled.
+1622068210.7046428 [INFO] Image freqmine pulled.
+1622068212.004924 [INFO] Image ferret pulled.
+1622068213.3588672 [INFO] Image canneal pulled.
+1622068214.6670413 [INFO] Image dedup pulled.
+1622068215.9667363 [INFO] Image blackscholes pulled.
+1622068215.96687 [INFO] Controller enters main control loop.
+1622068216.3896656 [INFO] Batch workload dedup: starts with 2 thread(s), running on core(s) [2, 3].
+1622068256.2145085 [INFO] batch workload dedup finished.
+1622068256.2149007 [INFO] All workloads finished. Controller quits.

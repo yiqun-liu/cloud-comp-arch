@@ -1,0 +1,36 @@
+1622067878.2494242 [INFO] Logs will be written to dedup-2-NONE-NONE
+1622067878.2497191 [INFO] Controller runs in single-task mode.
+1622067879.5816283 [INFO] Image fft pulled.
+1622067880.9271379 [INFO] Image freqmine pulled.
+1622067882.251173 [INFO] Image ferret pulled.
+1622067883.5952806 [INFO] Image canneal pulled.
+1622067884.9009986 [INFO] Image dedup pulled.
+1622067886.213609 [INFO] Image blackscholes pulled.
+1622067886.213826 [INFO] Controller enters main control loop.
+1622067886.6139853 [INFO] Batch workload dedup: starts with 2 thread(s), running on core(s) None.
+1622067925.067008 [INFO] batch workload dedup finished.
+1622067925.0672514 [INFO] All workloads finished. Controller quits.
+1622067941.1055582 [INFO] Logs will be written to dedup-2-NONE-NONE
+1622067941.1058133 [INFO] Controller runs in single-task mode.
+1622067942.4309685 [INFO] Image fft pulled.
+1622067943.726094 [INFO] Image freqmine pulled.
+1622067945.0181885 [INFO] Image ferret pulled.
+1622067946.3257413 [INFO] Image canneal pulled.
+1622067947.6258025 [INFO] Image dedup pulled.
+1622067948.9453251 [INFO] Image blackscholes pulled.
+1622067948.9455695 [INFO] Controller enters main control loop.
+1622067949.3836234 [INFO] Batch workload dedup: starts with 2 thread(s), running on core(s) None.
+1622067988.502934 [INFO] batch workload dedup finished.
+1622067988.503132 [INFO] All workloads finished. Controller quits.
+1622068009.7322035 [INFO] Logs will be written to dedup-2-NONE-NONE
+1622068009.7323558 [INFO] Controller runs in single-task mode.
+1622068011.0563846 [INFO] Image fft pulled.
+1622068012.3607888 [INFO] Image freqmine pulled.
+1622068013.6522868 [INFO] Image ferret pulled.
+1622068014.9484904 [INFO] Image canneal pulled.
+1622068016.2555063 [INFO] Image dedup pulled.
+1622068017.6445048 [INFO] Image blackscholes pulled.
+1622068017.6447582 [INFO] Controller enters main control loop.
+1622068018.053231 [INFO] Batch workload dedup: starts with 2 thread(s), running on core(s) None.
+1622068061.7791448 [INFO] batch workload dedup finished.
+1622068061.779403 [INFO] All workloads finished. Controller quits.

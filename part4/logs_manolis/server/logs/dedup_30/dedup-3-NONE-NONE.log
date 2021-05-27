@@ -1,0 +1,12 @@
+1622067805.5939844 [INFO] Logs will be written to dedup-3-NONE-NONE
+1622067805.5941327 [INFO] Controller runs in single-task mode.
+1622067806.9191563 [INFO] Image fft pulled.
+1622067808.2483225 [INFO] Image freqmine pulled.
+1622067809.5546188 [INFO] Image ferret pulled.
+1622067810.877255 [INFO] Image canneal pulled.
+1622067812.205705 [INFO] Image dedup pulled.
+1622067813.5294356 [INFO] Image blackscholes pulled.
+1622067813.5296423 [INFO] Controller enters main control loop.
+1622067813.9095402 [INFO] Batch workload dedup: starts with 3 thread(s), running on core(s) None.
+1622067847.8616502 [INFO] batch workload dedup finished.
+1622067847.8619425 [INFO] All workloads finished. Controller quits.

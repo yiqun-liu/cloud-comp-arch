@@ -1,0 +1,12 @@
+1622144843.2960696 [INFO] Logs will be written to canneal-4-NONE-NONE
+1622144843.2962582 [INFO] Controller runs in single-task mode.
+1622144844.5997894 [INFO] Image fft pulled.
+1622144845.9412417 [INFO] Image freqmine pulled.
+1622144847.2388844 [INFO] Image ferret pulled.
+1622144848.5476918 [INFO] Image canneal pulled.
+1622144849.827428 [INFO] Image dedup pulled.
+1622144851.114043 [INFO] Image blackscholes pulled.
+1622144851.1141663 [INFO] Controller enters main control loop.
+1622144851.4277182 [INFO] Batch workload canneal: starts with 4 thread(s), running on core(s) None.
+1622145088.3087492 [INFO] batch workload canneal finished.
+1622145088.30895 [INFO] All workloads finished. Controller quits.
