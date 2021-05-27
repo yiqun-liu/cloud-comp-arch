@@ -78,20 +78,9 @@ def plot_latency_cpu(d, errorbar=False):
         axs[1].yaxis.get_majorticklabels()
     for label in tick_labels:
         label.set_fontsize(14)
- 
-
-
-   # lns = [axs[0],axs_0_1]
-   #labs = [l.get_label() for l in lns]
-   #axs_0_1.legend(lns, labs, loc=0)
 
     axs[0].grid(True)
     axs[1].grid(True)
-    
-    #axs[0].legend(loc="upper right")
-    #axs_0_1.legend(loc="center right")
-    #axs[1].legend(loc="upper right")
-    #axs_1_1.legend(loc = "center right")
 
     plt.show()
 def extract_data(log_dir):
