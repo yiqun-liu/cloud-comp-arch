@@ -1,10 +1,42 @@
 import json
 
-# functions used to parse raw data
 def load_measurement_logs(file_path, repeat=False, include_target=False):
     with open(file_path, 'r') as f:
         lines = f.readlines()
+    if lines[0].startswith('Random'):
+        return load_dynamic_logs(lines)
+    else:
+        return load_static_logs(lines, repeat, include_target)
 
+# the random ones
+def load_dynamic_logs(lines):
+    logs = {'times': list(), 'metrics': list()}
+    start_prefix, end_prefix = 'Timestamp start: ', 'Timestamp end: '
+    start_time, end_time = None, None
+    for line in lines:
+        if line.startswith(start_prefix):
+            start_time = int(line[len(start_prefix):].strip())
+            continue
+        if line.startswith(end_prefix):
+            end_time = int(line[len(end_prefix):].strip())
+            continue
+        if not line.startswith('read'):
+            continue
+
+        values = line.split()
+        logs['metrics'].append([float(values[-2]), float(values[-1]), float(values[12]) / 1000.])
+
+    interval = (end_time - start_time) // len(logs['metrics'])
+    t = start_time
+    for i in range(len(logs['metrics'])):
+        logs['times'].append([t, t + interval])
+        t += interval
+
+    return logs
+
+
+# functions used to parse raw data
+def load_static_logs(lines, repeat=False, include_target=False):
     # log is a nested list: repetition, qps interval, values (latency & timestamps)
     logs = list()
     for line in lines:

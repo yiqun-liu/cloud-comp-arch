@@ -20,8 +20,8 @@ def main(util_file_path, measure_file_path=None):
         logs = json.load(f)
 
     if measure_file_path is not None:
-        fig, axs = plt.subplots(2, 1, tight_layout=True)
-        ax, ax2 = axs[0], axs[1]
+        fig, axs = plt.subplots(3, 1, tight_layout=True)
+        ax, ax2, ax3 = axs[0], axs[1], axs[2]
     else:
         fig, ax = plt.subplots(tight_layout=True)
 
@@ -63,16 +63,16 @@ def main(util_file_path, measure_file_path=None):
             latency.append(metrics[2])
 
         ax2.plot(times, latency, marker='o', label='p95', color='g')
+        ax2.plot([times[0], times[-1]], [2., 2.], linestyle='--',  label='SLO', color='g')
         ax2.legend()
 
-        ax3 = ax2.twinx()
         ax3.plot(times, actual_qps, marker='o', label='actual')
         ax3.plot(times, target_qps, marker='o', label='target')
         ax3.legend()
 
         ax2.set_ylabel('P95', color='g')
         ax3.set_ylabel('QPS')
-        ax2.set_ylim([0, 2])
+        ax2.set_ylim([0, 5])
         ax3.set_ylim([0, 100000])
 
     plt.show()
