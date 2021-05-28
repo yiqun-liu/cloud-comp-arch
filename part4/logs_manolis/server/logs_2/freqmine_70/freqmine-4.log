@@ -1,0 +1,12 @@
+1622145906.865653 [INFO] Logs will be written to freqmine-4-NONE-NONE
+1622145906.86597 [INFO] Controller runs in single-task mode.
+1622145908.1559741 [INFO] Image fft pulled.
+1622145909.5228546 [INFO] Image freqmine pulled.
+1622145910.8258245 [INFO] Image ferret pulled.
+1622145912.1139827 [INFO] Image canneal pulled.
+1622145913.4038146 [INFO] Image dedup pulled.
+1622145914.7371683 [INFO] Image blackscholes pulled.
+1622145914.7373557 [INFO] Controller enters main control loop.
+1622145915.1274629 [INFO] Batch workload freqmine: starts with 4 thread(s), running on core(s) None.
+1622146198.4501216 [INFO] batch workload freqmine finished.
+1622146198.4503741 [INFO] All workloads finished. Controller quits.

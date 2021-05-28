@@ -1,0 +1,12 @@
+1622148082.2222006 [INFO] Logs will be written to ferret-4-NONE-NONE
+1622148082.2223556 [INFO] Controller runs in single-task mode.
+1622148083.513618 [INFO] Image fft pulled.
+1622148084.7936835 [INFO] Image freqmine pulled.
+1622148086.084867 [INFO] Image ferret pulled.
+1622148087.38608 [INFO] Image canneal pulled.
+1622148088.6771047 [INFO] Image dedup pulled.
+1622148089.9665606 [INFO] Image blackscholes pulled.
+1622148089.9666874 [INFO] Controller enters main control loop.
+1622148090.3708487 [INFO] Batch workload ferret: starts with 4 thread(s), running on core(s) None.
+1622148618.906355 [INFO] batch workload ferret finished.
+1622148618.9065506 [INFO] All workloads finished. Controller quits.

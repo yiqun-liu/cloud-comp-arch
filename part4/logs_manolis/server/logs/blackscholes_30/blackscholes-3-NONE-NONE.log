@@ -1,0 +1,12 @@
+1622073071.9866326 [INFO] Logs will be written to blackscholes-3-NONE-NONE
+1622073071.9869077 [INFO] Controller runs in single-task mode.
+1622073073.387508 [INFO] Image fft pulled.
+1622073074.7008224 [INFO] Image freqmine pulled.
+1622073076.0207818 [INFO] Image ferret pulled.
+1622073077.3231819 [INFO] Image canneal pulled.
+1622073078.6379988 [INFO] Image dedup pulled.
+1622073079.9424198 [INFO] Image blackscholes pulled.
+1622073079.9426022 [INFO] Controller enters main control loop.
+1622073080.397439 [INFO] Batch workload blackscholes: starts with 3 thread(s), running on core(s) None.
+1622073214.1971207 [INFO] batch workload blackscholes finished.
+1622073214.1973834 [INFO] All workloads finished. Controller quits.

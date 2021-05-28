@@ -1,0 +1,72 @@
+1622069917.7824125 [INFO] Logs will be written to fft-4-NONE-NONE
+1622069917.782569 [INFO] Controller runs in single-task mode.
+1622069919.0895872 [INFO] Image fft pulled.
+1622069920.4708693 [INFO] Image freqmine pulled.
+1622069921.8431017 [INFO] Image ferret pulled.
+1622069923.1555824 [INFO] Image canneal pulled.
+1622069924.4595265 [INFO] Image dedup pulled.
+1622069925.7569873 [INFO] Image blackscholes pulled.
+1622069925.7572615 [INFO] Controller enters main control loop.
+1622069926.2071013 [INFO] Batch workload fft: starts with 4 thread(s), running on core(s) None.
+1622070021.92703 [INFO] batch workload fft finished.
+1622070021.937762 [INFO] All workloads finished. Controller quits.
+1622070588.3123388 [INFO] Logs will be written to fft-4-NONE-NONE
+1622070588.3124897 [INFO] Controller runs in single-task mode.
+1622070589.665171 [INFO] Image fft pulled.
+1622070590.9873004 [INFO] Image freqmine pulled.
+1622070592.3030195 [INFO] Image ferret pulled.
+1622070593.6049151 [INFO] Image canneal pulled.
+1622070594.8978379 [INFO] Image dedup pulled.
+1622070596.2062726 [INFO] Image blackscholes pulled.
+1622070596.2064328 [INFO] Controller enters main control loop.
+1622070596.776368 [INFO] Batch workload fft: starts with 4 thread(s), running on core(s) None.
+1622070700.9332893 [INFO] batch workload fft finished.
+1622070700.933644 [INFO] All workloads finished. Controller quits.
+1622071319.9180686 [INFO] Logs will be written to fft-4-NONE-NONE
+1622071319.9184248 [INFO] Controller runs in single-task mode.
+1622071321.2507317 [INFO] Image fft pulled.
+1622071322.567155 [INFO] Image freqmine pulled.
+1622071323.873813 [INFO] Image ferret pulled.
+1622071325.1862173 [INFO] Image canneal pulled.
+1622071326.5057003 [INFO] Image dedup pulled.
+1622071327.8173156 [INFO] Image blackscholes pulled.
+1622071327.817582 [INFO] Controller enters main control loop.
+1622071328.298317 [INFO] Batch workload fft: starts with 4 thread(s), running on core(s) None.
+1622071424.0123055 [INFO] batch workload fft finished.
+1622071424.0125096 [INFO] All workloads finished. Controller quits.
+1622071525.3339157 [INFO] Logs will be written to fft-4-NONE-NONE
+1622071525.3341606 [INFO] Controller runs in single-task mode.
+1622071526.6631398 [INFO] Image fft pulled.
+1622071527.9870684 [INFO] Image freqmine pulled.
+1622071529.2906997 [INFO] Image ferret pulled.
+1622071530.6103036 [INFO] Image canneal pulled.
+1622071531.914794 [INFO] Image dedup pulled.
+1622071533.226507 [INFO] Image blackscholes pulled.
+1622071533.2267451 [INFO] Controller enters main control loop.
+1622071533.6719005 [INFO] Batch workload fft: starts with 4 thread(s), running on core(s) None.
+1622071628.4508836 [INFO] batch workload fft finished.
+1622071628.4511178 [INFO] All workloads finished. Controller quits.
+1622071949.5821333 [INFO] Logs will be written to fft-4-NONE-NONE
+1622071949.5823183 [INFO] Controller runs in single-task mode.
+1622071950.8954418 [INFO] Image fft pulled.
+1622071952.20591 [INFO] Image freqmine pulled.
+1622071953.5123742 [INFO] Image ferret pulled.
+1622071954.8795202 [INFO] Image canneal pulled.
+1622071956.176785 [INFO] Image dedup pulled.
+1622071957.490642 [INFO] Image blackscholes pulled.
+1622071957.490859 [INFO] Controller enters main control loop.
+1622071958.0101137 [INFO] Batch workload fft: starts with 4 thread(s), running on core(s) None.
+1622072066.9575665 [INFO] batch workload fft finished.
+1622072066.9578729 [INFO] All workloads finished. Controller quits.
+1622072362.316861 [INFO] Logs will be written to fft-4-NONE-NONE
+1622072362.3170974 [INFO] Controller runs in single-task mode.
+1622072363.6528678 [INFO] Image fft pulled.
+1622072364.944257 [INFO] Image freqmine pulled.
+1622072366.3769085 [INFO] Image ferret pulled.
+1622072367.7096093 [INFO] Image canneal pulled.
+1622072369.0191793 [INFO] Image dedup pulled.
+1622072370.432849 [INFO] Image blackscholes pulled.
+1622072370.4331026 [INFO] Controller enters main control loop.
+1622072370.9943197 [INFO] Batch workload fft: starts with 4 thread(s), running on core(s) None.
+1622072514.5565138 [INFO] batch workload fft finished.
+1622072514.5579638 [INFO] All workloads finished. Controller quits.

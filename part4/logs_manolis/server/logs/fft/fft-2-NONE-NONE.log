@@ -1,0 +1,36 @@
+1622071646.4685698 [INFO] Logs will be written to fft-2-NONE-NONE
+1622071646.4687285 [INFO] Controller runs in single-task mode.
+1622071647.8336644 [INFO] Image fft pulled.
+1622071649.1489556 [INFO] Image freqmine pulled.
+1622071650.4565387 [INFO] Image ferret pulled.
+1622071651.7504706 [INFO] Image canneal pulled.
+1622071653.06081 [INFO] Image dedup pulled.
+1622071654.394998 [INFO] Image blackscholes pulled.
+1622071654.3951728 [INFO] Controller enters main control loop.
+1622071654.8437345 [INFO] Batch workload fft: starts with 2 thread(s), running on core(s) None.
+1622071760.6992648 [INFO] batch workload fft finished.
+1622071760.6994786 [INFO] All workloads finished. Controller quits.
+1622072088.5730102 [INFO] Logs will be written to fft-2-NONE-NONE
+1622072088.573373 [INFO] Controller runs in single-task mode.
+1622072089.9499645 [INFO] Image fft pulled.
+1622072091.2592828 [INFO] Image freqmine pulled.
+1622072092.5599253 [INFO] Image ferret pulled.
+1622072093.8675063 [INFO] Image canneal pulled.
+1622072095.1611426 [INFO] Image dedup pulled.
+1622072096.4949713 [INFO] Image blackscholes pulled.
+1622072096.4952784 [INFO] Controller enters main control loop.
+1622072096.9975817 [INFO] Batch workload fft: starts with 2 thread(s), running on core(s) None.
+1622072218.0349765 [INFO] batch workload fft finished.
+1622072218.0352783 [INFO] All workloads finished. Controller quits.
+1622072533.89166 [INFO] Logs will be written to fft-2-NONE-NONE
+1622072533.8919547 [INFO] Controller runs in single-task mode.
+1622072535.237602 [INFO] Image fft pulled.
+1622072536.5502813 [INFO] Image freqmine pulled.
+1622072537.8805292 [INFO] Image ferret pulled.
+1622072539.1880736 [INFO] Image canneal pulled.
+1622072540.4827476 [INFO] Image dedup pulled.
+1622072541.8175614 [INFO] Image blackscholes pulled.
+1622072541.8177426 [INFO] Controller enters main control loop.
+1622072542.309011 [INFO] Batch workload fft: starts with 2 thread(s), running on core(s) None.
+1622072682.8757012 [INFO] batch workload fft finished.
+1622072682.8759077 [INFO] All workloads finished. Controller quits.
