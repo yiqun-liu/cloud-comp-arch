@@ -85,7 +85,9 @@ def plot_latency_cpu(d, errorbar=False):
     axs[0].grid(True)
     axs[1].grid(True)
 
+    plt.savefig("latency_cpu.png")
     plt.show()
+
 def extract_data(log_dir):
     configs = ['2T1C', '2T2C']
     num_repeat = 3
