@@ -21,8 +21,8 @@ def plot_latency_cpu(d, errorbar=False):
                axs_0_1.errorbar(avg[:, 0], avg[:, 2], xerr=err[:, 0], yerr=err[:, 2], label=k+'-CPU',
                    fmt='D--', markersize=3, capsize=3, linewidth=1)
             else:
-               axs[0].plot(avg[:, 0], avg[:, 1], 'b-o', label=k+'-P95', markersize=3, linewidth=1)
-               axs_0_1.plot(avg[:, 0], avg[:, 2],'r-o', label=k+'-CPU', markersize=3, linewidth=1)
+               axs[0].plot(avg[:, 0], avg[:, 1], 'r-o', label=k+'-P95', markersize=3, linewidth=1)
+               axs_0_1.plot(avg[:, 0], avg[:, 2],'b-o', label=k+'-CPU', markersize=3, linewidth=1)
 
         else:
             axs_1_1 = axs[1].twinx()
@@ -32,8 +32,8 @@ def plot_latency_cpu(d, errorbar=False):
                 axs_1_1.errorbar(avg[:, 0], avg[:, 2], xerr=err[:, 0], yerr=err[:, 2], label=k+'-CPU',
                                  fmt='o-', markersize=3, capsize=3, linewidth=1)
             else:
-                axs[1].plot(avg[:, 0], avg[:, 1], 'b-o', label=k+'-P95', markersize=3, linewidth=1)
-                axs_1_1.plot(avg[:, 0], avg[:, 2],'r-o', label=k+'-CPU', markersize=3, linewidth=1)
+                axs[1].plot(avg[:, 0], avg[:, 1], 'r-o', label=k+'-P95', markersize=3, linewidth=1)
+                axs_1_1.plot(avg[:, 0], avg[:, 2],'b-o', label=k+'-CPU', markersize=3, linewidth=1)
 
 
     axs[0].set_ylabel('P95 Latency (ms)', fontsize=16, labelpad=0.1)
@@ -42,16 +42,19 @@ def plot_latency_cpu(d, errorbar=False):
     axs[1].set_ylabel('P95 Latency (ms)', fontsize=16, labelpad=0.1)
     axs_1_1.set_ylabel('CPU Usage %', fontsize=16, labelpad=0.1)
     
-    axs[0].yaxis.label.set_color("blue")
-    axs_0_1.yaxis.label.set_color("red")
-    axs[1].yaxis.label.set_color("blue")
-    axs_1_1.yaxis.label.set_color("red")
+    axs[0].yaxis.label.set_color("red")
+    axs_0_1.yaxis.label.set_color("blue")
+    axs[1].yaxis.label.set_color("red")
+    axs_1_1.yaxis.label.set_color("blue")
 
     axs[0].set_xlabel('Achieved QPS', fontsize=16, labelpad=0.1)
     axs_0_1.set_xlabel('Achieved QPS', fontsize=16, labelpad=0.1)
 
     axs[1].set_xlabel('Achieved QPS', fontsize=16, labelpad=0.1)
     axs_1_1.set_xlabel('Achieved QPS', fontsize=16, labelpad=0.1)
+
+    axs[0].set_title("Cores:1,Threads:2")
+    axs[1].set_title("Cores:2,Threads:2")  
 
     axs[1].set_ylim([0, 2.4])
     axs_1_1.set_ylim([0, 160])
