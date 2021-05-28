@@ -1,0 +1,28 @@
+1622151303.945949 [INFO] Logs will be written to s7
+1622151303.9535446 [INFO] Adjusting cores allocated to memcached: from None to [0, 1].
+1622151305.2921169 [INFO] Image fft pulled.
+1622151306.6698015 [INFO] Image freqmine pulled.
+1622151308.0872748 [INFO] Image ferret pulled.
+1622151309.4208536 [INFO] Image canneal pulled.
+1622151310.7983043 [INFO] Image dedup pulled.
+1622151312.0953712 [INFO] Image blackscholes pulled.
+1622151312.0955663 [INFO] Controller enters main control loop.
+1622151312.4888918 [INFO] Batch workload fft: starts with 4 thread(s), running on core(s) [1, 3].
+1622151312.8818889 [INFO] Batch workload blackscholes: starts with 3 thread(s), running on core(s) [0, 1, 2].
+1622151334.7731845 [INFO] Adjusting cores allocated to blackscholes: from [0, 1, 2] to [].
+1622151334.7963574 [INFO] batch workload blackscholes paused.
+1622151334.7965214 [INFO] Adjusting cores allocated to fft: from [1, 3] to [0, 1, 2, 3].
+1622151412.9427626 [INFO] batch workload fft finished.
+1622151412.9432378 [INFO] Adjusting cores allocated to blackscholes: from [] to [0, 1, 2].
+1622151412.9801662 [INFO] batch workload blackscholes un-paused.
+1622151413.7084262 [INFO] Batch workload canneal: starts with 4 thread(s), running on core(s) [3].
+1622151575.843657 [INFO] batch workload blackscholes finished.
+1622151575.8439274 [INFO] Adjusting cores allocated to canneal: from [3] to [0, 1, 2, 3].
+1622151681.6982796 [INFO] batch workload canneal finished.
+1622151682.0813072 [INFO] Batch workload freqmine: starts with 4 thread(s), running on core(s) [0, 1, 2, 3].
+1622151930.1757197 [INFO] batch workload freqmine finished.
+1622151930.5718083 [INFO] Batch workload ferret: starts with 4 thread(s), running on core(s) [0, 1, 2, 3].
+1622152410.31042 [INFO] batch workload ferret finished.
+1622152410.6329935 [INFO] Batch workload dedup: starts with 4 thread(s), running on core(s) [0, 1, 2, 3].
+1622152458.2717695 [INFO] batch workload dedup finished.
+1622152458.2720494 [INFO] All workloads finished. Controller quits.

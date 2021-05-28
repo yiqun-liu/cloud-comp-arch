@@ -1,0 +1,174 @@
+1622106700.1841223 [INFO] Logs will be written to s1
+1622106700.192511 [INFO] Adjusting cores allocated to memcached: from None to [0, 1, 2, 3].
+1622106701.5459185 [INFO] Image fft pulled.
+1622106702.8472579 [INFO] Image freqmine pulled.
+1622106704.2211468 [INFO] Image ferret pulled.
+1622106705.5235026 [INFO] Image canneal pulled.
+1622106706.8329024 [INFO] Image dedup pulled.
+1622106708.1177258 [INFO] Image blackscholes pulled.
+1622106708.117904 [INFO] Controller enters main control loop.
+1622106708.4872627 [INFO] Batch workload fft: starts with 4 thread(s), running on core(s) [0, 1, 3].
+1622106708.88487 [INFO] Batch workload canneal: starts with 4 thread(s), running on core(s) [0, 2, 3].
+1622106886.0776458 [INFO] Logs will be written to s1
+1622106886.0859075 [INFO] Adjusting cores allocated to memcached: from None to [0, 1, 2, 3].
+1622106887.405622 [INFO] Image fft pulled.
+1622106888.7091024 [INFO] Image freqmine pulled.
+1622106890.0060134 [INFO] Image ferret pulled.
+1622106891.3252432 [INFO] Image canneal pulled.
+1622106892.6133542 [INFO] Image dedup pulled.
+1622106893.9053996 [INFO] Image blackscholes pulled.
+1622106893.9056172 [INFO] Controller enters main control loop.
+1622106894.2671893 [INFO] Batch workload fft: starts with 4 thread(s), running on core(s) [0, 1, 3].
+1622106894.7734034 [INFO] Batch workload canneal: starts with 4 thread(s), running on core(s) [0, 2, 3].
+1622107038.5516791 [INFO] batch workload fft finished.
+1622107038.5520003 [INFO] Adjusting cores allocated to canneal: from [0, 2, 3] to [0, 1, 2, 3].
+1622107039.6520817 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107040.752059 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107041.8441973 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107042.942281 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107044.0390322 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107045.1381173 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107046.2159941 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107047.301676 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107048.3795226 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107049.4917655 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107050.584172 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107051.6810973 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107052.766584 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107053.8480844 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107054.954382 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107056.0500948 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107057.1353736 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107058.253702 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107059.3507464 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107060.4543629 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107061.5518727 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107062.6634974 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107063.7535818 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107064.8461242 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107065.9426367 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107067.0531507 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107068.1375031 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107069.226584 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107070.333157 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107071.4274766 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107072.5182076 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107073.6319058 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107074.7416337 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107075.8583488 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107076.99927 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107078.132878 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107079.2442906 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107080.3602047 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107081.4661617 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107082.5986576 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107083.7280128 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107084.8650641 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107085.9656427 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107087.0837977 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107088.176304 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107089.308238 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107090.3884559 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107091.5018568 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107092.6161392 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107093.7116222 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107094.798723 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107095.9285896 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107097.0476487 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107098.193157 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107099.3154685 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107100.4263952 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107101.5335374 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107102.6465936 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107103.762327 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107104.8557334 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107106.0106268 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107107.1187873 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107108.219224 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107109.336921 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107110.4714699 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107111.5766072 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107112.708378 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107113.8044505 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107114.9075315 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107116.0152752 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107117.108696 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107118.2105486 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107119.2890706 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107120.3891006 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107121.4889953 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107122.5961382 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107123.6803682 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107124.7804475 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107125.8887033 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107126.9985092 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107128.1111073 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107129.215465 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107130.3121977 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107131.445608 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107132.571129 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107133.6804812 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107134.7529771 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107135.8265755 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107136.9272635 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107138.0371192 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107139.1324549 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107140.223548 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107141.300779 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107142.3875487 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107143.5023844 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107144.613937 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107145.7724493 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107146.9050512 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107148.0441692 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107149.147844 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107150.2368925 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107151.334669 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107152.4901462 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107153.6109836 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107154.709762 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107155.847892 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107156.9654047 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107158.0992894 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107159.2057705 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107160.312858 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107161.4256103 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107162.535045 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107163.6439312 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107164.7778986 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107165.891909 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107166.9953616 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107168.1209905 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107169.2489522 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107170.3668036 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107171.4926188 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107172.6017377 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107173.7025607 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107174.816194 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107175.9212847 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107177.0442894 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107178.1553607 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107179.2773821 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107180.3849962 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107181.4680865 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107182.5557103 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107183.6537666 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107184.734767 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107185.8192844 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107186.9026434 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107187.990308 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107189.0701952 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107190.1641352 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107191.2503655 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107192.3304932 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107193.443338 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2, 3] to [0, 1, 2, 3].
+1622107194.4828885 [INFO] batch workload canneal finished.
+1622107194.9755452 [INFO] Batch workload freqmine: starts with 4 thread(s), running on core(s) [0, 1, 2, 3].
+1622107467.9966636 [INFO] batch workload freqmine finished.
+1622107468.444817 [INFO] Batch workload ferret: starts with 4 thread(s), running on core(s) [0, 1, 2, 3].
+1622107996.0205247 [INFO] batch workload ferret finished.
+1622107996.5623438 [INFO] Batch workload dedup: starts with 4 thread(s), running on core(s) [0, 1, 2, 3].
+1622108044.0656564 [INFO] batch workload dedup finished.
+1622108044.5122979 [INFO] Batch workload blackscholes: starts with 4 thread(s), running on core(s) [0, 1, 2, 3].
+1622108189.6439693 [INFO] batch workload blackscholes finished.
+1622108189.6441965 [INFO] All workloads finished. Controller quits.

@@ -279,7 +279,7 @@ def calc_cpu_util(samples):
     return (u1, u3, u5, u10)
 
 debug_counter = 0
-debug_interval = 10
+debug_interval = 3
 debug_records = dict()
 debug_records_timestamp = time.time()
 def add_debug_records(name, record):

@@ -1,0 +1,55 @@
+1622153804.9671037 [INFO] Logs will be written to s6
+1622153804.9820426 [INFO] Adjusting cores allocated to memcached: from None to [0, 1].
+1622153806.4072855 [INFO] Image fft pulled.
+1622153807.690416 [INFO] Image freqmine pulled.
+1622153809.003277 [INFO] Image ferret pulled.
+1622153810.3489923 [INFO] Image canneal pulled.
+1622153811.6493247 [INFO] Image dedup pulled.
+1622153812.9259732 [INFO] Image blackscholes pulled.
+1622153812.9261355 [INFO] Controller enters main control loop.
+1622153813.7342246 [INFO] Batch workload fft: starts with 4 thread(s), running on core(s) [1, 3].
+1622153814.4985802 [INFO] Batch workload canneal: starts with 2 thread(s), running on core(s) [2].
+1622153815.3594532 [INFO] Batch workload blackscholes: starts with 2 thread(s), running on core(s) [0, 1, 2, 3].
+1622154134.2993362 [INFO] batch workload fft finished.
+1622154134.3404846 [INFO] Adjusting cores allocated to blackscholes: from [0, 1, 2, 3] to [2, 3].
+1622154134.4366848 [INFO] Adjusting cores allocated to canneal: from [2] to [0, 1].
+1622154262.7665007 [INFO] Adjusting cores allocated to canneal: from [0, 1] to [0, 1, 2].
+1622154262.8390334 [INFO] Adjusting cores allocated to blackscholes: from [2, 3] to [2, 3].
+1622154262.8891675 [INFO] Adjusting cores allocated to memcached: from [0, 1] to [0, 1].
+1622154302.8211174 [INFO] batch workload blackscholes finished.
+1622154304.48057 [INFO] Batch workload freqmine: starts with 4 thread(s), running on core(s) [2, 3].
+1622154449.5204153 [INFO] Logs will be written to s6
+1622154449.5281234 [INFO] Adjusting cores allocated to memcached: from None to [0, 1].
+1622154450.9745665 [INFO] Image fft pulled.
+1622154452.2851555 [INFO] Image freqmine pulled.
+1622154453.6586125 [INFO] Image ferret pulled.
+1622154454.9836352 [INFO] Image canneal pulled.
+1622154456.3777425 [INFO] Image dedup pulled.
+1622154457.681469 [INFO] Image blackscholes pulled.
+1622154457.6817563 [INFO] Controller enters main control loop.
+1622154458.223655 [INFO] Batch workload fft: starts with 4 thread(s), running on core(s) [1, 3].
+1622154458.6765683 [INFO] Batch workload canneal: starts with 2 thread(s), running on core(s) [2].
+1622154459.1492782 [INFO] Batch workload blackscholes: starts with 2 thread(s), running on core(s) [0, 1, 2, 3].
+1622154499.16486 [INFO] Adjusting cores allocated to canneal: from [2] to [].
+1622154499.2155526 [INFO] batch workload canneal paused.
+1622154499.2157266 [INFO] Adjusting cores allocated to blackscholes: from [0, 1, 2, 3] to [].
+1622154499.244009 [INFO] batch workload blackscholes paused.
+1622154499.244172 [INFO] Adjusting cores allocated to fft: from [1, 3] to [0, 1, 2, 3].
+1622154565.4965172 [INFO] batch workload fft finished.
+1622154565.4968455 [INFO] Adjusting cores allocated to blackscholes: from [] to [2, 3].
+1622154565.5628865 [INFO] batch workload blackscholes un-paused.
+1622154565.615586 [INFO] Adjusting cores allocated to canneal: from [] to [0, 1].
+1622154565.649219 [INFO] batch workload canneal un-paused.
+1622154600.2121115 [INFO] Adjusting cores allocated to canneal: from [0, 1] to [0, 1, 2].
+1622154600.2632535 [INFO] Adjusting cores allocated to blackscholes: from [2, 3] to [2, 3].
+1622154600.3432705 [INFO] Adjusting cores allocated to memcached: from [0, 1] to [0, 1].
+1622154744.2246342 [INFO] batch workload blackscholes finished.
+1622154744.8130224 [INFO] Batch workload freqmine: starts with 4 thread(s), running on core(s) [2, 3].
+1622154898.572553 [INFO] batch workload canneal finished.
+1622154898.5730114 [INFO] Adjusting cores allocated to freqmine: from [2, 3] to [0, 1, 2, 3].
+1622155044.822674 [INFO] batch workload freqmine finished.
+1622155045.2551215 [INFO] Batch workload ferret: starts with 4 thread(s), running on core(s) [0, 1, 2, 3].
+1622155531.7101488 [INFO] batch workload ferret finished.
+1622155532.215973 [INFO] Batch workload dedup: starts with 4 thread(s), running on core(s) [0, 1, 2, 3].
+1622155579.9086144 [INFO] batch workload dedup finished.
+1622155579.9089653 [INFO] All workloads finished. Controller quits.

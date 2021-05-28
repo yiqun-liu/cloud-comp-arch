@@ -1,0 +1,22 @@
+1622031688.8926318 [INFO] Logs will be written to deterministic_sequential
+1622031688.904459 [INFO] Adjusting cores allocated to memcached: from None to [0, 1].
+1622031690.2039816 [INFO] Image fft pulled.
+1622031691.4886138 [INFO] Image freqmine pulled.
+1622031692.8412285 [INFO] Image ferret pulled.
+1622031694.154793 [INFO] Image canneal pulled.
+1622031695.4573224 [INFO] Image dedup pulled.
+1622031696.7838736 [INFO] Image blackscholes pulled.
+1622031696.7840939 [INFO] Controller enters main control loop.
+1622031697.3057573 [INFO] Batch workload fft: starts with 2 thread(s), running on core(s) [2, 3].
+1622031832.320262 [INFO] batch workload fft finished.
+1622031832.7249255 [INFO] Batch workload freqmine: starts with 2 thread(s), running on core(s) [2, 3].
+1622032202.5643332 [INFO] batch workload freqmine finished.
+1622032203.0505958 [INFO] Batch workload ferret: starts with 2 thread(s), running on core(s) [2, 3].
+1622032945.9437752 [INFO] batch workload ferret finished.
+1622032946.3065817 [INFO] Batch workload canneal: starts with 2 thread(s), running on core(s) [2, 3].
+1622033265.9158976 [INFO] batch workload canneal finished.
+1622033266.4159434 [INFO] Batch workload dedup: starts with 2 thread(s), running on core(s) [2, 3].
+1622033323.5876656 [INFO] batch workload dedup finished.
+1622033324.1042569 [INFO] Batch workload blackscholes: starts with 2 thread(s), running on core(s) [2, 3].
+1622033528.8769455 [INFO] batch workload blackscholes finished.
+1622033528.8771348 [INFO] All workloads finished. Controller quits.

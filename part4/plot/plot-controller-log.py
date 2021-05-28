@@ -50,6 +50,7 @@ def main(util_file_path, measure_file_path=None):
         # draw the second figure
         logs = parse.load_measurement_logs(measure_file_path, include_target=True)
         times, actual_qps, target_qps, latency = list(), list(), list(), list()
+        num_violations = 0
         for interval, metrics in zip(logs['times'], logs['metrics']):
             # unit: unified to second
             t = (interval[0] + interval[1]) / 2 / 1000
@@ -61,6 +62,9 @@ def main(util_file_path, measure_file_path=None):
             actual_qps.append(metrics[0])
             target_qps.append(metrics[1])
             latency.append(metrics[2])
+
+            if metrics[2] > 2:
+                num_violations += 1
 
         ax2.plot(times, latency, marker='o', label='p95', color='g')
         ax2.plot([times[0], times[-1]], [2., 2.], linestyle='--',  label='SLO', color='g')
@@ -74,6 +78,9 @@ def main(util_file_path, measure_file_path=None):
         ax3.set_ylabel('QPS')
         ax2.set_ylim([0, 5])
         ax3.set_ylim([0, 100000])
+
+        print('violation', num_violations, num_violations / len(times), num_violations / len(logs['times']))
+    print('time', max_time - min_time)
 
     plt.show()
 

@@ -1,0 +1,33 @@
+1622157684.2454298 [INFO] Logs will be written to s8
+1622157684.25252 [INFO] Adjusting cores allocated to memcached: from None to [0, 1].
+1622157685.5487268 [INFO] Image fft pulled.
+1622157686.8213603 [INFO] Image freqmine pulled.
+1622157688.1222956 [INFO] Image ferret pulled.
+1622157689.4052286 [INFO] Image canneal pulled.
+1622157690.7250988 [INFO] Image dedup pulled.
+1622157692.018156 [INFO] Image blackscholes pulled.
+1622157692.0184267 [INFO] Controller enters main control loop.
+1622157692.3988245 [INFO] Batch workload fft: starts with 4 thread(s), running on core(s) [0, 1, 3].
+1622157692.8417997 [INFO] Batch workload canneal: starts with 4 thread(s), running on core(s) [2].
+1622157693.3007264 [INFO] Batch workload blackscholes: starts with 3 thread(s), running on core(s) [0, 1, 2].
+1622157733.326162 [INFO] Adjusting cores allocated to blackscholes: from [0, 1, 2] to [].
+1622157734.252022 [INFO] batch workload blackscholes paused.
+1622157734.2522097 [INFO] Adjusting cores allocated to canneal: from [2] to [].
+1622157734.2763317 [INFO] batch workload canneal paused.
+1622157734.2764935 [INFO] Adjusting cores allocated to fft: from [0, 1, 3] to [0, 1, 2, 3].
+1622157800.7116036 [INFO] batch workload fft finished.
+1622157800.7284935 [INFO] Adjusting cores allocated to blackscholes: from [] to [0, 1, 2].
+1622157800.7485604 [INFO] batch workload blackscholes un-paused.
+1622157800.825122 [INFO] Adjusting cores allocated to canneal: from [] to [3].
+1622157800.8481011 [INFO] batch workload canneal un-paused.
+1622157958.676272 [INFO] batch workload blackscholes finished.
+1622157958.6764283 [INFO] Adjusting cores allocated to canneal: from [3] to [0, 1, 2, 3].
+1622157959.8436315 [INFO] Batch workload freqmine: starts with 4 thread(s), running on core(s) [3].
+1622158099.99023 [INFO] batch workload canneal finished.
+1622158099.9904537 [INFO] Adjusting cores allocated to freqmine: from [3] to [0, 1, 2, 3].
+1622158294.3911552 [INFO] batch workload freqmine finished.
+1622158294.830454 [INFO] Batch workload ferret: starts with 4 thread(s), running on core(s) [0, 1, 2, 3].
+1622158780.6923165 [INFO] batch workload ferret finished.
+1622158781.3014865 [INFO] Batch workload dedup: starts with 4 thread(s), running on core(s) [0, 1, 2, 3].
+1622158824.4855008 [INFO] batch workload dedup finished.
+1622158824.4857917 [INFO] All workloads finished. Controller quits.
