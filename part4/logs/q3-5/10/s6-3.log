@@ -1,0 +1,34 @@
+1622186923.9296217 [INFO] Logs will be written to s6
+1622186923.9386516 [INFO] Adjusting cores allocated to memcached: from None to [0, 1].
+1622186925.2939756 [INFO] Image fft pulled.
+1622186926.6734097 [INFO] Image freqmine pulled.
+1622186927.9778442 [INFO] Image ferret pulled.
+1622186929.2900007 [INFO] Image canneal pulled.
+1622186930.6202016 [INFO] Image dedup pulled.
+1622186931.9574912 [INFO] Image blackscholes pulled.
+1622186931.957634 [INFO] Controller enters main control loop.
+1622186932.3911114 [INFO] Batch workload fft: starts with 4 thread(s), running on core(s) [1, 3].
+1622186932.8447714 [INFO] Batch workload canneal: starts with 2 thread(s), running on core(s) [2].
+1622186933.3755295 [INFO] Batch workload blackscholes: starts with 2 thread(s), running on core(s) [0, 1, 2, 3].
+1622186961.6341896 [INFO] Adjusting cores allocated to canneal: from [2] to [0, 1, 2].
+1622186962.4282467 [INFO] Adjusting cores allocated to blackscholes: from [0, 1, 2, 3] to [2, 3].
+1622187002.1405861 [INFO] Adjusting cores allocated to canneal: from [0, 1, 2] to [].
+1622187002.1728837 [INFO] batch workload canneal paused.
+1622187002.1730547 [INFO] Adjusting cores allocated to blackscholes: from [2, 3] to [].
+1622187002.208808 [INFO] batch workload blackscholes paused.
+1622187002.208958 [INFO] Adjusting cores allocated to fft: from [1, 3] to [0, 1, 2, 3].
+1622187063.9022923 [INFO] batch workload fft finished.
+1622187063.9025915 [INFO] Adjusting cores allocated to blackscholes: from [] to [2, 3].
+1622187063.9393063 [INFO] batch workload blackscholes un-paused.
+1622187063.9878278 [INFO] Adjusting cores allocated to canneal: from [] to [0, 1].
+1622187064.018815 [INFO] batch workload canneal un-paused.
+1622187219.9404373 [INFO] batch workload blackscholes finished.
+1622187220.6956992 [INFO] Batch workload freqmine: starts with 4 thread(s), running on core(s) [2, 3].
+1622187457.1843278 [INFO] batch workload canneal finished.
+1622187457.1846955 [INFO] Adjusting cores allocated to freqmine: from [2, 3] to [0, 1, 2, 3].
+1622187546.973235 [INFO] batch workload freqmine finished.
+1622187547.410914 [INFO] Batch workload ferret: starts with 4 thread(s), running on core(s) [0, 1, 2, 3].
+1622188039.699994 [INFO] batch workload ferret finished.
+1622188040.159966 [INFO] Batch workload dedup: starts with 4 thread(s), running on core(s) [0, 1, 2, 3].
+1622188087.5716703 [INFO] batch workload dedup finished.
+1622188087.5719748 [INFO] All workloads finished. Controller quits.
